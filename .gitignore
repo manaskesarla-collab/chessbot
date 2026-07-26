@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Editor
+.vscode/
+.DS_Store
+
+# ML artifacts we do NOT want committed to git
+# (models are large and shouldn't bloat the repo; use a model registry
+# or release artifacts later instead)
+models/*
+!models/.gitkeep
+
+# Large or generated data files
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
