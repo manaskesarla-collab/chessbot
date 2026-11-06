@@ -1,5 +1,0 @@
-# Day 1 dependencies only.
-# We add more packages later (pandas, numpy, tqdm, etc.) as each day requires them.
-
-python-chess>=1.10.0  # Chess rules engine: board representation, legal move generation, FEN/UCI parsing
-torch>=2.2.0          # PyTorch, with Apple MPS backend support for M-series Macs
