@@ -1,0 +1,4 @@
+blocks: 6
+filters: 64
+input_planes: 19
+policy_size: 4672

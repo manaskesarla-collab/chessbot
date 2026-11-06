@@ -5,26 +5,29 @@ __pycache__/
 .venv/
 venv/
 env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# Editor
+# Editor / OS
 .vscode/
 .DS_Store
 
-# ML artifacts we do NOT want committed to git
-# (models are large and shouldn't bloat the repo; use a model registry
-# or release artifacts later instead)
-models/*
-!models/.gitkeep
+# Large or generated artifacts (keep out of git)
+data/
+checkpoints/
+logs/
+models/
+*.pt
+*.pth
+*.npy
+*.pgn
+*.pgn.zst
 
-# Large or generated data files
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-
-# Logs
-logs/*
-!logs/.gitkeep
+# Secrets (e.g. Lichess API token)
+.env
+lichess-bot/config.yml
 
 # Jupyter
 .ipynb_checkpoints/
